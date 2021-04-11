@@ -1,0 +1,177 @@
+body {
+    background-image: url(bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 7, 7);
+    padding: none;
+    margin: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0px;
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    margin-left: 65%;
+    border-radius: 0px 0px 4px 4px;
+    padding: 5px;
+    color: #f2f2f2;
+}
+
+.navbar a {
+    float: center;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#aktuell {
+    color: rgb(233, 143, 236)
+}
+
+.navbar a:hover {
+    color: rgb(164, 186, 219)
+}
+
+.circle {
+    background-color: rgb(164, 186, 219);
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    margin-top: -350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle h1 {
+    color: #fbfaf0;
+    font-size: 220px;
+    letter-spacing: -25px;
+    margin-top: 370px;
+}
+
+.circle h2 {
+    color: #fbfaf0;
+    font-size: 80px;
+    margin-top: -205px;
+    margin-left: 270px;
+    padding: 0;
+}
+
+.circle p {
+    font-size: 12px;
+    margin-top: -2000;
+    text-align: left;
+    padding: 0;
+    margin-left: 400px;
+    margin-top: -70px;
+}
+
+.icon {
+    margin-left: 400px;
+    padding: 0px;
+    width: 3%;
+}
+
+.icon a:hover {
+    background-color: violet;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 800px;
+    text-align: left;
+}
+
+.main h2 {
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    color: rgb(164, 186, 219)
+}
+
+.main p {
+    color: black;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+input[type=text] {
+    height: 20px;
+    color: white;
+    background-color: lightgray;
+    width: 100%;
+    padding: 2px 7px 2px 7px;
+    margin-top: 6px;
+    border-style: none;
+    margin-bottom: 6px;
+}
+
+input[type=email] {
+    color: white;
+    background-color: lightgray;
+    height: 20px;
+    width: 100%;
+    padding: 2px 7px 2px 7px;
+    margin-top: 6px;
+    border-style: none;
+    margin-bottom: 6px;
+}
+
+input[type=submit] {
+    background-color: lightgray;
+    border-style: none;
+    color: white;
+    padding: 2px 7px 2px 7px;
+}
+
+textarea {
+    height: 40px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccbcc;
+    color: white;
+    border-style: none;
+    padding: 5px;
+    padding-bottom: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 12px;
+    padding-right: 82px;
+}
+
+.contact {
+    width: 30%;
+    margin-bottom: 400px;
+    color: #cccbcc;
+}
+
+.contact p {
+    color: #cccbcc;
+    font-size: 10px;
+}
