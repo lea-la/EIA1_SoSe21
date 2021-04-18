@@ -1,0 +1,38 @@
+body{background-image: url(assets/bg.png);}
+
+.main{
+   
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+
+.text{position: absolute;
+      top:-50px;
+      padding:50px;} 
+
+.reihe{display: flex;
+      flex-direction: row;
+      text-align: center;}
+       
+
+h1{color:white;
+  padding: 25px;
+  padding-top: 45px;
+  padding-bottom: 0px;
+  
+  font-size: 35px;}
+
+p{color:black;
+  font-size: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+  
+
+
+  }

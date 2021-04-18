@@ -1,0 +1,55 @@
+body {
+    background-image: url(assets/bg.png);
+}
+
+.main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.muschel1 {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+}
+
+.muschel2 {
+    position: absolute;
+    bottom: 180px;
+    left:180px;
+}
+
+.muschel3 {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+.text {
+    position: absolute;
+    top: -50px;
+    padding: 50px;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+
+a img:last-child {
+    display: none;  
+  }
+  a:hover img:last-child {
+    display: block;  
+  }
+  a:hover img:first-child {
+    display: none;  
+  }
+  
+  

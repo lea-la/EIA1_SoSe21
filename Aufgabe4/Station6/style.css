@@ -1,0 +1,67 @@
+body {
+    background-image: url(assets/images/bg.png);
+}
+
+.main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+video {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+}
+
+.text {
+    position: absolute;
+    top: -40px;
+    padding: 50px;
+    float: left;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 28px;
+}
+
+p {
+    color: white;
+    padding-top: 50px;
+}
+
+.muschel1 {
+    position: absolute;
+    top: 75px;
+    right: 470px;
+}
+
+.muschel2 {
+    position: absolute;
+    right: 290px;
+    bottom: 50px
+}
+
+.muschel3 {
+    position: absolute;
+    right: 50px;
+    top: 55px;
+}
+
+.stern1 {
+    position: absolute;
+    right: 57px;
+    bottom:68px;
+}
+
+.stern2 {
+    position: absolute;
+    right: 160px;
+    bottom: 87px
+}
