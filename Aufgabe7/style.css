@@ -1,0 +1,58 @@
+html, body {
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  
+  
+  .pads {
+    width: 469px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -80px;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    margin: 3px ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+     }
+
+  .box:hover{cursor: pointer;}   
+  
+  #pad1, #pad2, #pad3{ 
+    background: linear-gradient(to top, #3361ca , #5491ef);
+  }
+  #pad1:active, #pad2:active, #pad3:active{ 
+    background: linear-gradient(to top, #0f1e3f , #3361ca);
+  }
+  
+  #pad4, #pad5, #pad6, #pad7 { 
+    background: linear-gradient(to top, #dc307d,#ec65ad); 
+  }
+  #pad4:active, #pad5:active, #pad6:active, #pad7:active { 
+    background: linear-gradient(to top, #380d20,#dc307d); 
+  }
+  
+  #pad8, #pad9 { 
+    background: linear-gradient(to top, #b96a25,#eaa651); 
+  }
+  #pad8:active, #pad9:active { 
+    background: linear-gradient(to top, #613814,#b96a25); 
+  }
+
+ #playbutton:hover{cursor: pointer;} 
+ #playbutton:active{opacity: 0.5;}
+                  
