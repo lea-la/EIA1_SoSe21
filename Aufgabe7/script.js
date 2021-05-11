@@ -8,7 +8,12 @@ var soundlaugh1 = new Audio('assets/laugh-1.mp3');
 var soundlaugh2 = new Audio('assets/laugh-2.mp3');
 var soundsnare = new Audio('assets/snare.mp3');
 var sounds = [soundA, soundC, soundF, soundG, soundhithat, soundkick, soundlaugh1, soundlaugh2, soundsnare];
-var beat = [soundhithat, soundkick, soundsnare];
+var beat = [soundkick, soundhithat, soundsnare];
+var index = 0;
+function playSound(sounds) {
+    sounds.play();
+}
+;
 window.addEventListener('load', function () {
     document.querySelector("#pad1").addEventListener("click", function () {
         playSound(soundA);
@@ -59,14 +64,14 @@ window.addEventListener('load', function () {
         playBeat();
     });
 });
-function playSound(sounds) {
-    sounds.play();
+function playBeat() {
+    var interval = setInterval(function () {
+        beat[index].play();
+        index = index + 1;
+        if (index == 3) {
+            index = 0;
+        }
+    }, 700);
 }
 ;
-function playBeat() {
-    beat[0].play();
-    beat[1].play();
-    beat[2].play();
-    var myVar = setInterval(playBeat, 300);
-}
 //# sourceMappingURL=script.js.map

@@ -1,16 +1,21 @@
-var soundA = new Audio('assets/A.mp3');
-var soundC = new Audio('assets/C.mp3');
-var soundF = new Audio('assets/F.mp3');
-var soundG = new Audio('assets/G.mp3');
-var soundhithat = new Audio('assets/hihat.mp3');
-var soundkick = new Audio('assets/kick.mp3');
-var soundlaugh1 = new Audio('assets/laugh-1.mp3');
-var soundlaugh2 = new Audio('assets/laugh-2.mp3');
-var soundsnare = new Audio('assets/snare.mp3');
+var soundA: HTMLAudioElement = new Audio('assets/A.mp3');
+var soundC: HTMLAudioElement = new Audio('assets/C.mp3');
+var soundF: HTMLAudioElement = new Audio('assets/F.mp3');
+var soundG: HTMLAudioElement = new Audio('assets/G.mp3');
+var soundhithat: HTMLAudioElement = new Audio('assets/hihat.mp3');
+var soundkick: HTMLAudioElement = new Audio('assets/kick.mp3');
+var soundlaugh1: HTMLAudioElement = new Audio('assets/laugh-1.mp3');
+var soundlaugh2: HTMLAudioElement = new Audio('assets/laugh-2.mp3');
+var soundsnare: HTMLAudioElement = new Audio('assets/snare.mp3');
 
 
 var sounds: HTMLAudioElement[] = [soundA, soundC, soundF, soundG, soundhithat, soundkick, soundlaugh1, soundlaugh2, soundsnare];
-var beat: HTMLAudioElement[] = [soundhithat, soundkick, soundsnare]
+var beat: HTMLAudioElement[] = [soundkick, soundhithat, soundsnare]
+var index: number = 0;
+
+function playSound(sounds) {
+    sounds.play()
+};
 
 
 window.addEventListener('load', function () {
@@ -73,19 +78,21 @@ window.addEventListener('load', function () {
     });
 });
 
+function playBeat() {
+    var interval: number = setInterval(function () {
 
-function playSound(sounds) {
-    sounds.play()
+        beat[index].play();
+
+        index = index + 1;
+
+        if (index == 3) {
+            index = 0;
+        }
+    }, 700);
 };
 
-function playBeat() {
-    beat[0].play();
-    beat[1].play();
-    beat[2].play();
-
-    var myVar = setInterval(playBeat, 300);
 
 
-}
+
 
 
