@@ -103,7 +103,7 @@ function playBeat(): void {
         } else {
             i = 0;
         }
-    }, 700);
+    },                    700);
 }
 
 function stopBeat(): void {
