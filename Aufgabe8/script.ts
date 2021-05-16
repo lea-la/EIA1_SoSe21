@@ -102,7 +102,7 @@ function playBeat(): void {
         } else {
             i = 0;
         }
-    },                    700);
+    },                    600);
 }
 
 function stopBeat(): void {
